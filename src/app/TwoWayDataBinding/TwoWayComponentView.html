@@ -1,3 +1,14 @@
 <h4>Two Way Data Bind</h4>
 <br/>
+{{First}}
+<br/>
 <input type ="text" [value]=Name (input)="Name=$event.target.value">
+<br/>
+{{Second}}
+<br/>
+<input type="text" [(ngModel)]=Name>
+<br/>
+{{Output}}
+{{Name}}
+
+

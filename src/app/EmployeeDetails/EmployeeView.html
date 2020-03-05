@@ -1,11 +1,12 @@
+<!--
 <h3>Employee Details </h3>
 <input type="text" [value]=Name (input)="Name=$event.target.value" >
 <input type="text" [(ngModel)]=Name>
 <br/>
 <h3><b> Your Name : </b><h3> {{Name}}
   <br/>
-<h3><b> Your Age : </b><h3> {{Age}}
-Name:"A",Age:20,Salery:5000,DOB:"15/09/1989"},
+<h3><b> Your Age : </b><h3> {{Age}}-->
+
  <table>
    <thead>
      <th><tr>Name</tr></th>
@@ -14,8 +15,11 @@ Name:"A",Age:20,Salery:5000,DOB:"15/09/1989"},
      <th><tr>DOB</tr></th>
    </thead>
    <tbody>
-      <tr ngFor="let Employee for EmployeeList">
-        <td>Employee.Name </td>
+      <tr *ngFor="let Employee of EmployeeList;">
+        <td>{{Employee.Name}}  </td>
+        <td>{{Employee.Age}} </td>
+        <td>{{Employee.Salery}} </td>
+        <td>{{Employee.DOB}} </td>
         </tr>
    </tbody>
  </table>

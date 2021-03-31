@@ -9,4 +9,12 @@ export class TwoWayDataBinding{
   public Second:string ="Second Way";
   public Output:string ="Your Output";
   public Name :string ="Your Value";
+
+  clickCount :number = 0;
+
+  onClick():void{
+    this.clickCount = this.clickCount +1;
+  }
+  
+
 }

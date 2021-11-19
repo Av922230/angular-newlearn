@@ -18,14 +18,21 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css", 
+              "src/CSS/bootstrap.css",
+              "src/CSS/bootstrap.rtl.css",
+              "src/CSS/bootstrap-grid.css",
+              "src/CSS/bootstrap-grid.rtl.css",
+              "src/CSS/bootstrap-reboot.css",
+              "src/CSS/bootstrap-reboot.rtl.css",
+              "src/CSS/bootstrap-utilities.css",
+              "src/CSS/bootstrap-utilities.rtl.css"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            "scripts": [
+              "src/JS/bootstrap.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -71,26 +78,16 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "styles.css"
-            ],
+            "styles": ["styles.css"],
             "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
